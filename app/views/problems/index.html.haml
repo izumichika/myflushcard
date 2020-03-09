@@ -2,23 +2,17 @@
   %h.header__title
     Myフラッシュカード
   .header__right
-    .header__right__btn
+    .header__right__start
+      = link_to "スタート", "#"
+    .header__right__new
       = link_to "問題作成", "#"
 .body
   .body__problems
-    .body__problems__problem
-      .body__problems__problem__japanese
-        りんご
-      .body__problems__problem__english
-        apple
-    .body__problems__problem
-      .body__problems__problem__japanese
-        レモン
-      .body__problems__problem__english
-        lemon
-    .body__problems__problem
-      .body__problems__problem__japanese
-        バナナ
-      .body__problems__problem__english
-        banana
+    - @problems.each do |problem|
+      .body__problems__problem
+        .body__problems__problem__japanese
+          = problem.question
+        .body__problems__problem__english
+          = problem.anser
 .footer
+
