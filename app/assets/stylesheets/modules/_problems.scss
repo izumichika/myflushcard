@@ -66,6 +66,9 @@
     width: 500px;
     margin-left: auto;
     margin-right: auto;
+    &__direction {
+      font-size: 23px;
+    }
     &__problem {
       height: 50px;
       display: flex;
