@@ -29,6 +29,18 @@
       color: white;
       display: block;
     }
+    &__return {
+      height: 50px;
+      width: 100px;
+      line-height: 50px;
+      border-radius: 3px;
+      background-color: slategrey;
+      font-size: 15px;
+      font-weight: bold;
+      &:hover {
+        background: gold;
+      }
+    }
     &__start {
       height: 50px;
       width: 100px;
@@ -57,12 +69,13 @@
   }
 }
 .body {
-  height: calc(100vh - 230px);
+  height: calc(100vh - 200px);
   width: 100vw;
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 10px;
   background-color: #E6FFE9;
+  overflow: scroll;
   &__problems {
     width: 500px;
     margin-left: auto;
@@ -77,6 +90,16 @@
       border: medium solid gray;
       font-size: 25px;
       background-color: white;
+      &__delete {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 15px;
+        a {
+          text-decoration: none;
+          color: black;
+          display: block;
+        }
+      }
       &__japanese {
         line-height: 50px;
         width: 200px;

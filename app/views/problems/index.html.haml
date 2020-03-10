@@ -10,6 +10,8 @@
   .body__problems
     - @problems.each do |problem|
       .body__problems__problem
+        .body__problems__problem__delete
+          = link_to "削除", "/problems/#{problem.id}", method: :delete
         .body__problems__problem__japanese
           = problem.question
         .body__problems__problem__english
