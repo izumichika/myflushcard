@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 .header {
@@ -80,8 +81,11 @@
         line-height: 50px;
         width: 200px;
         text-align: center;
-        border: medium solid lightgray;
         background-color: lightgray;
+        &__jinput {
+          border: none;
+          background-color: transparent;
+        }
       }
       &__english {
         line-height: 50px;
@@ -89,6 +93,10 @@
         margin-left: auto;
         width: 200px;
         text-align: center;
+        &__einput {
+          border: none;
+          background-color: transparent;
+        }
       }
     }
   }

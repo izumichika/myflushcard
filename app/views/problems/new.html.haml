@@ -13,17 +13,9 @@
       = form_with(model: @problem, local: true) do |form|
         .body__problems__problem
           .body__problems__problem__japanese
-            りんご
+            = form.text_field :question, placeholder: "単語", size: "10x10", class: "body__problems__problem__japanese__jinput"
           .body__problems__problem__english
-            apple
-.footer
+            = form.text_field :anser, placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput"
+          = form.submit "作成"
 
-    -# <%= form_with(model: @tweet, local: true) do |form| %>
-    -#   <h3>
-    -#     投稿する
-    -#   </h3>
-    -#   <%= render partial: "form", locals: { form: form } %>
-    -# -# <% end %>
-    -# <%= form.text_field :image, placeholder: "Image Url", id: "image" %>
-    -# <%= form.text_area :text, placeholder: "text" , rows: "10", id: "text" %>
-    -# <%= form.submit "SEND" %>
+.footer
