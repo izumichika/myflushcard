@@ -1,0 +1,29 @@
+.header
+  %h.header__title
+    Myフラッシュカード
+  .header__right
+    -# .header__right__start
+    -#   = link_to "スタート", "#"
+    -# .header__right__new
+    -#   = link_to "問題作成", "/problems/new" 
+.body
+  .body__problems
+    %h.body__problems__direction
+      単語を入力　　　　英単語を入力
+      = form_with(model: @problem, local: true) do |form|
+        .body__problems__problem
+          .body__problems__problem__japanese
+            りんご
+          .body__problems__problem__english
+            apple
+.footer
+
+    -# <%= form_with(model: @tweet, local: true) do |form| %>
+    -#   <h3>
+    -#     投稿する
+    -#   </h3>
+    -#   <%= render partial: "form", locals: { form: form } %>
+    -# -# <% end %>
+    -# <%= form.text_field :image, placeholder: "Image Url", id: "image" %>
+    -# <%= form.text_area :text, placeholder: "text" , rows: "10", id: "text" %>
+    -# <%= form.submit "SEND" %>

@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_09_073207) do
+ActiveRecord::Schema.define(version: 2020_03_09_091416) do
 
   create_table "problems", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "question", null: false
-    t.integer "anser", null: false
+    t.string "question", null: false
+    t.string "anser", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
