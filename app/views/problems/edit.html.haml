@@ -13,6 +13,6 @@
         = form_with(model: @result, local: true, autocomplete: 'off') do |form|
           .body__problems__problem__english
             = form.text_field :anser, placeholder: "英単語", size: "10x10", class: "body__problems__problem__english__einput", autocomplete: "off"
-          = form.submit "作成"
+          = form.submit "回答する"
 
 .footer

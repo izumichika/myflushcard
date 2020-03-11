@@ -24,6 +24,8 @@ class ProblemsController < ApplicationController
   end
 
   def update
+    Problem.create(result_params)
+    redirect_to "/"
   end
 
   private
