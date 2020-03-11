@@ -1,0 +1,15 @@
+.header
+  %h.header__title
+    Myフラッシュカード
+  .header__right
+    .header__right__start
+      = link_to "一覧", "/"
+.body
+  .body__problems
+    - @problems.each do |problem|
+      .body__problems__problem
+        .body__problems__problem__japanese
+          = problem.question
+        .body__problems__problem__english
+          = problem.anser
+.footer

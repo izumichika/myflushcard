@@ -18,19 +18,13 @@ class ProblemsController < ApplicationController
     redirect_to "/"
   end
 
-  def edit
-    @problems = Problem.all
-    @result = Problem.new
-  end
-
-  def update
-    Problem.create(result_params)
-    redirect_to "/"
+  def show
+    @problems = Problem.order("RAND()").limit(5)
   end
 
   private
   def problem_params
-    params.require(:problem).permit(:question, :anser)
+    params.require(:problem).permit(:question, :anser, :result)
   end
 
 end

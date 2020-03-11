@@ -97,7 +97,12 @@
       position: relative;
       &__result {
         position: absolute;
+        top:5px;
         right: 10px;
+        &__rinput {
+          border: none;
+          background-color: transparent;
+        }
       }
       &__delete {
         margin-top: auto;
@@ -125,11 +130,29 @@
         margin-left: auto;
         width: 200px;
         text-align: center;
+        position: relative;
         &__einput {
           border: none;
           background-color: transparent;
         }
+        &__btn {
+          position: absolute;
+          right:-80px;
+          top:7px;
+
+          height: 30px;
+          width: 50px;
+          line-height: 30px;
+          border-radius: 3px;
+          background-color: slategrey;
+          font-size: 10px;
+          font-weight: bold;
+          &:hover {
+            background: gold;
+          }
+        }
       }
+      
     }
   }
 }
