@@ -18,6 +18,14 @@ class ProblemsController < ApplicationController
     redirect_to "/"
   end
 
+  def edit
+    @problems = Problem.all
+    @result = Problem.new
+  end
+
+  def update
+  end
+
   private
   def problem_params
     params.require(:problem).permit(:question, :anser)

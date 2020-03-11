@@ -35,7 +35,13 @@ has_many :problems
 ## problemsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|question|integer|null: false|
-|anser|integer|null: false|
+|question|string|null: false|
+|anser|string|null: false|
 ### Association
 belongs_to :user
+
+## testsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|       |string|null: false|
+|       |string|null: false|

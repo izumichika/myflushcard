@@ -3,13 +3,15 @@
     Myフラッシュカード
   .header__right
     .header__right__start
-      = link_to "スタート", "/problems/test"
+      = link_to "スタート", edit_problem_path(@problems)
     .header__right__new
       = link_to "問題作成", "/problems/new" 
 .body
   .body__problems
     - @problems.each do |problem|
       .body__problems__problem
+        .body__problems__problem__result
+          = icon('fas', 'times')
         .body__problems__problem__delete
           = link_to "削除", "/problems/#{problem.id}", method: :delete
         .body__problems__problem__japanese
