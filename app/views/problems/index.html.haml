@@ -10,9 +10,9 @@
   .body__problems
     - @problems.each do |problem|
       .body__problems__problem
-        .body__problems__problem__result
-          = problem.result
-          -# = icon('fas', 'times')
+        -# .body__problems__problem__result
+        -#   = problem.result
+        -#   -# = icon('fas', 'times')
         .body__problems__problem__delete
           = link_to "削除", "/problems/#{problem.id}", method: :delete
         .body__problems__problem__japanese
