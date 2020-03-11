@@ -23,25 +23,26 @@ Things you may want to cover:
 
 * ...
 
-## usersテーブル
+<!-- ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-has_many :problems
+has_many :problems -->
 
 ## problemsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |question|string|null: false|
 |anser|string|null: false|
-### Association
-belongs_to :user
+|result|string||
+<!-- ### Association
+belongs_to :user -->
 
-## testsテーブル
+<!-- ## testsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |       |string|null: false|
-|       |string|null: false|
+|       |string|null: false| -->
