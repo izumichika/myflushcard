@@ -2,7 +2,7 @@ $(document).ready(function(){
   $(window).bind("load", function(){
     if(document.URL.match("/problems/%23")){
       $(function(){
-        cnt = 7;
+        cnt = 5;
         $('#timer').text(cnt);
         cnDown = setInterval(function(){
           cnt--;
@@ -13,7 +13,7 @@ $(document).ready(function(){
         },1000);
         // setInterval('location.reload()',cnt);
       });
-      setTimeout('location.reload()',8000);
+      setTimeout('location.reload()',6000);
     }
   });
 });
