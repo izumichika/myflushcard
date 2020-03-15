@@ -13,7 +13,7 @@ $(document).ready(function(){
         },1000);
         // setInterval('location.reload()',cnt);
       });
-      setTimeout('location.reload()',7000);
+      setTimeout('location.reload()',8000);
     }
   });
 });
