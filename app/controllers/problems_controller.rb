@@ -19,8 +19,9 @@ class ProblemsController < ApplicationController
   end
 
   def show
-    rand = Rails.env.production? ? "RANDOM()" : "RAND()"
-    @problems = Problem.order(rand).limit(5)
+    # rand = Rails.env.production? ? "random()" : "rand()"
+    # @problems = Problem.order(rand).limit(5)
+    @problems = Problem.order("random()").limit(5)
   end
 
   private
