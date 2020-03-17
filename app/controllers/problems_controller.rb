@@ -19,7 +19,7 @@ class ProblemsController < ApplicationController
   end
 
   def show
-    @problems = Problem.order("RAND()").limit(5)
+    @problems = Problem.order("RANDOM()").limit(5)
   end
 
   private
