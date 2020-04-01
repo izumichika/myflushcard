@@ -50,8 +50,11 @@ test:
 production:
   <<: *default
   database: myflushcard_production
-  username: myflushcard
-  password: <%= ENV['MYFLUSHCARD_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+  # username: myflushcard
+  # password: <%= ENV['MYFLUSHCARD_DATABASE_PASSWORD'] %>
 
   # <<: *default
   # adapter: postgresql
