@@ -7,10 +7,10 @@
 .body
   .body__problems
     #timer 5
-    - @problems.each do |problem|
+    -@problems.each do |problem|
       .body__problems__problem
         .body__problems__problem__japanese
-          = problem.question
+          =problem.question
         .body__problems__problem__english
-          = problem.anser
+          =problem.anser
 .footer
